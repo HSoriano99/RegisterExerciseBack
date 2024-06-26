@@ -1,7 +1,7 @@
 import express, { Application } from "express";
 import router from "./router";
 import cors from "cors";
-// import { errorHandler } from "./middlewares/errorHandler";
+import { errorHandler } from "./middlewares/errorHandler";
 
 // -----------------------------------------------------------------------------
 
@@ -13,7 +13,7 @@ app.use(cors());
 
 // Rutas
 app.use(router);
-// app.use(errorHandler);
+app.use(errorHandler);
 
 
 export default app;
