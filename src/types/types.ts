@@ -6,6 +6,7 @@ export interface CreateUserRequestBody {
   export interface TokenData {
     userId: string;
     userRol: string;
+    userEmail: string;
     userFirstName?: string;
     userLastName?: string;
     userPhoneNumber?: string;

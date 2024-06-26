@@ -13,4 +13,12 @@ router.post("/registerUser", async (req, res, next) => {
     }
 });
 
+router.post("/loginUser", async (req, res, next) => {
+    try {
+        res.json(await userController.login(req.body));
+    } catch (e) {
+        next(e);
+    }
+});
+
 export default router;

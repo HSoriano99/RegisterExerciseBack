@@ -22,9 +22,6 @@ import {
     password_hash!: string;
   
     @Column()
-    username!: string;
-  
-    @Column()
     first_name?: string;
   
     @Column()
